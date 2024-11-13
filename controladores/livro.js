@@ -7,8 +7,7 @@ function getLivros(req, res) {
     } catch (error) {
         res.status(500)
         res.send(error.message)
-    }
-    
+    } 
 }
 
 function getLivro(req, res) {
@@ -27,9 +26,7 @@ function getLivro(req, res) {
         res.status(500)
         res.send(error.message)
     }
-    
 }
-
 function postLivro(req, res) {
     try{
         const livroNovo = req.body
@@ -47,7 +44,6 @@ function postLivro(req, res) {
         res.send(error.message)
     }
 }
-
 function patchLivro(req, res) {
     try{
         const id = req.params.id
